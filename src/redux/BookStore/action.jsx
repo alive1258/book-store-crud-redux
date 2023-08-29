@@ -26,7 +26,7 @@ export const removeBook = (id) => {
 }
 
 //  update book 
-export const updateBook = (bookObj) => {
+export const updateBook = (bookObj)=>{
     return {
         type: UPDATE_BOOK,
         payload: bookObj

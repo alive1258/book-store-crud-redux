@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-export default function Header() {
+export default function Header({onSearch}) {
     const [inputValue, setInputValue]=useState("");
 
     //debounce functionality
@@ -23,7 +23,7 @@ export default function Header() {
      <nav className="py-4 2xl:px-6">
         <div className="container flex items-center justify-between">
           <img
-            src="/images/logo.svg"
+            src="./logo.svg"
             width="150px"
             className="object-contain"
             alt="logo"
